@@ -1,0 +1,100 @@
+@-webkit-keyframes base-modal-active {
+  from {
+	background: rgba(0, 0, 0, 0);
+   }
+  to {
+	background: rgba(0, 0, 0, 0.2);
+    } 
+}
+
+@-moz-keyframes base-modal-active {
+  from {
+	background: rgba(0, 0, 0, 0);
+  }
+  to {
+	background: rgba(0, 0, 0, 0.2);
+  } 
+}
+
+@-o-keyframes base-modal-active {
+  from {
+	background: rgba(0, 0, 0, 0);
+  }
+  to {
+	background: rgba(0, 0, 0, 0.2);
+  } 
+}
+
+@keyframes base-modal-active {
+  from {
+	background: rgba(0, 0, 0, 0);
+  }
+  to {
+	background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+
+
+@-webkit-keyframes base-modal-inactive {
+  from {
+	background: rgba(0, 0, 0, 0.2);
+	display: initial;
+   }
+  to {
+	background: rgba(0, 0, 0, 0);
+	display: none;
+    } 
+}
+
+@-moz-keyframes base-modal-inactive {
+  from {
+	background: rgba(0, 0, 0, 0.2);
+	display: initial;
+  }
+  to {
+	background: rgba(0, 0, 0, 0);
+	display: none;
+  } 
+}
+
+@-o-keyframes base-modal-inactive {
+  from {
+	background: rgba(0, 0, 0, 0.2);
+	display: initial;
+  }
+  to {
+	background: rgba(0, 0, 0, 0);
+	display: none;
+  } 
+}
+
+@keyframes base-modal-inactive {
+  from {
+	background: rgba(0, 0, 0, 0.2);
+	display: initial;
+  }
+  to {
+	background: rgba(0, 0, 0, 0);
+	display: none;
+  }
+}
+
+
+.base-modal {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	position: fixed;
+	display: none;
+	animation: base-modal-inactive .3s ease 1;
+
+	&-active {
+		animation: base-modal-active .3s ease 1;
+		display: initial;
+	}
+}
+

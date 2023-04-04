@@ -1,0 +1,44 @@
+.ant-input.treble-input{
+    @import "styles/rootStyles.scss";
+    background: #202020;
+    border: 1px solid #767676;
+    border-radius: 8px;
+    height: 46px;
+    color: #FFFFFF;
+    font-family: hk-grotesk-medium;
+    font-size: 16px;
+    line-height: 21px;
+    .ant-input-number-handler-wrap {
+        display: none;
+    }
+    &:hover,&:focus {
+        border-color: #6464FF;
+        box-shadow: none;
+    }
+}
+
+.ant-input-number.treble-input{
+    @import "styles/rootStyles.scss";
+    background: #202020;
+    border: 1px solid #767676;
+    border-radius: 8px;
+    height: 46px;
+    color: #FFFFFF;
+    font-family: hk-grotesk-medium;
+    font-size: 16px;
+    line-height: 21px;
+    width: 100%;
+    .ant-input-number-handler-wrap {
+        display: none;
+    }
+    .ant-input-number-input-wrap {
+        height: 100%;
+        input {
+            height: 100%;
+        }
+    }
+    &:hover,&:focus, &.ant-input-number-focused {
+        border-color: #6464FF;
+        box-shadow: none;
+    }
+}

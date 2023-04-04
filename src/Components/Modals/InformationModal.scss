@@ -1,0 +1,96 @@
+.treble-information-modal {
+    @import "styles/rootStyles.scss";
+    font-family: hk-grotesk;
+    .ant-modal {
+        top: 275px;
+        right: 100px;
+        .ant-modal-content {
+            display: flex;
+            background: #DCE7FF;
+            border: 4px solid #000000;
+            box-shadow: 0px 20px 28px rgba(15, 29, 44, 0.35);
+            min-width: 775px;
+            height: 430px;
+            width: 100%;
+            justify-content: center;
+            .ant-modal-body {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: flex-start;
+                margin-left: 50px;
+                .treble-container {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                    .treble-right {
+                        margin-top: -25px;
+                        .treble-typing {
+                            background: #FFFFFF;
+                            border: 3px solid #1A1A1A;
+                            width: 389px;
+                            height: auto;
+                            color: #000000;
+                            min-height: 144px;
+                            padding: 24px 30px;
+                            font-size: 20px;
+                            line-height: 32px;
+                            font-style: normal;
+                            font-family: hk-grotesk-medium;
+                        }
+                    }
+                }
+                .treble-cta {
+                    min-width: 270px;
+                    width: fit-content;
+                    position: absolute;
+                    top: 85%;
+                    left: 58%;
+                    .front-cta {
+                        background: #000000;
+                        border-radius: 0px;
+                        color: white;
+                        font-family: hk-grotesk-medium;
+                        font-size: 20px;
+                        line-height: 28px;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                        height: 64px;
+                        position: relative;
+                        bottom: 50px;
+                        z-index: 2;
+                        cursor: pointer;
+                    }
+                    .back-cta {
+                        display: flex;
+                        height: 64px;
+                        background: white;
+                        border: 2px solid #000000;
+                        z-index: 1;
+                        position: relative;
+                        bottom: 104px;
+                        left: 10px;
+                    }
+                }
+            }
+            button.ant-modal-close {
+                span.ant-modal-close-x {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    padding: 21px 21px 0 0;
+                    span {
+                        width: 18px;
+                        height: 18px;
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                            color: #202020;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

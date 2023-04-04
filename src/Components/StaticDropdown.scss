@@ -1,0 +1,16 @@
+.static-menu {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 16px;
+  z-index: 1;
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
+.trigger-component {
+  cursor: pointer;
+}

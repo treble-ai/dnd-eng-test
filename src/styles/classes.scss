@@ -1,0 +1,35 @@
+
+p {
+	margin: 0px;
+	&.xl{
+
+		font-weight: regular;
+		font-size: 21px; 
+		line-height: 30px 
+	}
+
+	&.l{
+
+		font-weight: regular;
+		font-size: 18px;
+		line-height: 24px 
+	}
+
+	&.r{
+
+		font-weight: regular;
+		font-size: 15px;
+		line-height: 21px 
+	}
+
+	&.tr{
+
+		font-weight: regular;
+		font-size: 13px;
+		line-height: 18px
+	}
+
+}
+button {
+	cursor: pointer;
+}

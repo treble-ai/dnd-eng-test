@@ -1,0 +1,19 @@
+.new-component{
+    &.pill{
+        width: auto;
+        height: 19px;
+        padding: 6px 9px;
+        font-size: 12px;
+        line-height: 9px;
+        font-family: hk-grotesk-medium;
+        border-radius: 800px;
+        &.pink{
+            background-color: #FEBED6;
+            color: #202020;
+        }
+        &.teal {
+            background-color: #74FAB9;
+            color: #000000;
+        }
+    }
+}

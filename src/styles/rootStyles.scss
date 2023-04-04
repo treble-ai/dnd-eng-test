@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+// Set your brand colors
+$purple: #8a4d76;
+$pink: #fa7c91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+$black-bis: #1a1a1a;
+$grey: #b2b2b2;
+$grey-20: #202020;
+$grey-26: #262626;
+$grey-39: #393939;
+$teal: #96C3C3;
+$blue-light: #8CAFFF;
+$white-ter: #F5F5F5;
+$blue: #5087FF;
+$lavender: #9B9BFF;
+$white: #ffffff;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$family-primary: "hk-grotesk";
+$family-secondary: "hk-grotesk";
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+$black-bis: $black-bis;
+$grey: $grey;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+@import "./textStyles.scss";
+@import "./elements.scss";
+@import "./classes.scss";

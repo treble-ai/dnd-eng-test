@@ -1,0 +1,9 @@
+.logo-treble{
+	width: 80px;
+	height: 80px;
+	background-image: url("../images/treble-purple.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 34px;
+}

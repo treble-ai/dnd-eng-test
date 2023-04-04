@@ -1,0 +1,58 @@
+@-webkit-keyframes base-right-modal-active {
+  from {
+	opacity: 0;
+	right: -20px;
+   }
+  to {
+	opacity: 1;
+	right: 0;
+    } 
+}
+
+@-moz-keyframes base-right-modal-active {
+  from {
+	opacity: 0;
+	right: -20px;
+  }
+  to {
+	opacity: 1;
+	right: 0;
+  } 
+}
+
+@-o-keyframes base-right-modal-active {
+  from {
+	opacity: 0;
+	right: -20px;
+  }
+  to {
+	opacity: 1;
+	right: 0;
+  } 
+}
+
+@keyframes base-right-modal-active {
+  from {
+	opacity: 0;
+	right: -20px;
+  }
+  to {
+	opacity: 1;
+	right: 0;
+  }
+}
+
+
+
+.base-modal {
+	.right-modal {
+		position: fixed;
+		height: 100%;
+		max-width: 100%;
+		right: 0;
+
+		&-active {
+			animation: base-right-modal-active .3s ease 1;
+		}
+	}
+}

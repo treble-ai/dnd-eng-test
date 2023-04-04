@@ -1,0 +1,30 @@
+.multipleselect-country-selector-v2 {
+  .dropdown {
+    width: 20%;
+    .dropdown-menu {
+      max-height: 400px;
+      overflow-y: scroll;
+    }
+    .dropdown-trigger {
+      width: 100%;
+      button {
+        width: 100%;
+        p {
+          max-width: none;
+        }
+      }
+    }
+  }
+  .country {
+    display: flex;
+    flex-direction: row;
+    .flag-span {
+      margin-right: 8px;
+    }
+    .icon {
+      height: 16px;
+      margin-left: auto;
+    }
+  }
+  
+}

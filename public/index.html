@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <script type="text/javascript">
+      window.AppcuesSettings = {
+        enableURLDetection: true
+      };
+    </script>
+    <script src="//fast.appcues.com/125914.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <meta property="og:title" content="treble.ai" />
+    <meta property="og:description" 
+      content="Conversa automáticamente con tus usuarios por WhatsApp y SMS. Escala la comunicación con tus usuarios como nunca antes usando sus canales preferidos. " />
+    <meta property="og:url" content="https://www.treble.ai" />
+    <meta property="og:image" content="https://s3.amazonaws.com/www.wok.treble.ai/treble.png" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Treble</title>
+    <script type="text/javascript">
+      (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
+      ;r.type="text/javascript";r.async=true
+      ;r.src="https://cdn.amplitude.com/libs/amplitude-4.5.2-min.gz.js"
+      ;r.onload=function(){if(e.amplitude.runQueuedFunctions){
+      e.amplitude.runQueuedFunctions()}else{
+      console.log("[Amplitude] Error: could not load SDK")}}
+      ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
+      ;function s(e,t){e.prototype[t]=function(){
+      this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+      var o=function(){this._q=[];return this}
+      ;var a=["add","append","clearAll","prepend","set","setOnce","unset"]
+      ;for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[]
+      ;return this}
+      ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+      ;for(var p=0;p<l.length;p++){s(c,l[p])}n.Revenue=c
+      ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut",
+      "setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify",
+      "clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp",
+      "logEventWithGroups","setSessionId","resetSessionId"]
+      ;function v(e){function t(t){e[t]=function(){
+      e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+      for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
+      e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+      ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
+      ;e.amplitude=n})(window,document);
+
+      amplitude.getInstance().init("aee6313675172ea18e788e548d4ba681");
+    </script>
+  </head>
+  <body class="swal2-shown">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <p id="whatsapp-access-token" style="display: contents;"></p>
+    <script>
+      window.fbAsyncInit = function() {
+          FB.init({
+          appId: '391390192944672',
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: 'v14.0'
+          });
+      };
+      // Load the JavaScript SDK asynchronously
+      (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      // Facebook Login with JavaScript SDK
+      function launchWhatsAppSignup() {
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          if (urlParams.get('migrating') == 'true') {
+            var cookies = document.cookie.split(";");
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                var eqPos = cookie.indexOf("=");
+                var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+          }
+          // Launch Facebook login
+          FB.login(function (response) {
+            console.log("RESPONSE FROM FACEBOOK LOGIN POPUP", response);
+            
+          if (response.authResponse) {
+              const accessToken = response.authResponse.accessToken;
+              localStorage.setItem("metaAcessToken", accessToken)
+              window.location.href="/onboarding?embedded_state=finished"
+              //Use this token to call the debug_token API and get the shared WABA's ID
+          } else {
+              alert("Incomplete embedded sign up")
+          }
+          }, {
+          scope: 'business_management,whatsapp_business_management',
+          extras: {
+              feature: 'whatsapp_embedded_signup',
+              setup: {}
+          }
+          });
+      }
+    </script>
+    <button onclick="launchWhatsAppSignup()" style="display: none;" id="whatsapp-sdk-button">Login with Facebook</button>
+    <script src="https://fast.wistia.com/embed/medias/eg3e07lgr8.jsonp" async></script>
+    <script src="https://fast.wistia.com/embed/medias/bhqrz26o1q.jsonp" async></script>
+    <script src="https://fast.wistia.com/embed/medias/6sn1en5iyw.jsonp" async></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- Hotjar Tracking Code for www.treble.ai -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1062409,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

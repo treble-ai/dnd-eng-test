@@ -1,0 +1,26 @@
+.custom-radio {
+  margin-right: 80px;
+
+  input {
+    margin-right: 15px;
+  }
+  .custom-control-label {
+    padding-top: 2px;
+  }
+
+  .custom-control-input:focus + .custom-control-label::before {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::before {
+      border-color: #5ab978;
+      background-color: #ffffff;
+    }
+    &::after {
+      background-image: url("../assets/images/green-check.svg") !important;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+$iconsPath: "~assets/icons";
+
+.simple-select-dropdown {
+  position: relative;
+  p {
+    color: #000000;
+  }
+  .trigger {
+    width: -webkit-fill-available;
+    height: 100px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    cursor: pointer;
+    .icon {
+      margin-left: auto;
+      width: 13px;
+      height: 7px;
+      -webkit-mask-size: contain;
+      -webkit-mask: url(#{$iconsPath}/dropdown-arrow-2.svg) no-repeat center;
+      mask: url(#{$iconsPath}/dropdown-arrow-2.svg) no-repeat center;
+    }
+  }
+  .options {
+    position: absolute;
+    z-index: 10;
+    height: fit-content;
+    background: #FFFFFF;
+    .option {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding-left: 23px;
+      padding-right: 20px;
+      .icon {
+        margin-left: auto;
+      }
+    }
+  }
+}

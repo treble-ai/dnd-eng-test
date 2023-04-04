@@ -1,0 +1,27 @@
+span.m-switch.m-switch--outline {
+	transform: translateY(30%);
+	font-size: 1em;
+
+	input:checked ~ span:after {
+		margin-left: 18px;
+	}
+
+	label {
+		margin-bottom: 0;
+		span {    
+			height: 16px;
+    	width: 32px;
+
+    		&::before {
+					width: 32px;
+    		}
+
+    		&::after {
+    			height: 12px;
+    			width: 12px;
+					top: 2px;
+    			line-height: 0;
+    		}
+    	}
+	}
+}

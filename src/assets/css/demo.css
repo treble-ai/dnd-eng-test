@@ -1,0 +1,103 @@
+#modal-blanket {
+	position: fixed;
+	/*background-image: url("../images/bg-bottom.png");*/
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	z-index: 2;
+	background-color: rgba(235,235,255,0.9);
+}
+
+#logo {
+	height: 100px;
+	margin-top: 20px;
+	margin-left: 20px;
+	display: block;
+	float: left;
+}
+
+#logo-name {
+	position: relative;
+	float: left;
+	display: block;
+	font-size: 36px;
+	font-family: 'Poppins', sans-serif;
+	color: #5556a6;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+#modal {
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: white;
+	opacity: 0.9;
+	width: 800px;
+	max-width: 80%;
+	position: absolute;
+	border: 2px solid #c9c9ff;
+	font-size: 21px;
+	border-radius: 30px;
+	padding: 20px 40px;
+	text-align: center;
+}
+#modal p {
+	color: #ff5e8d;
+	padding: 20px 40px 10px 30px;
+	font-family: 'Poppins', sans-serif;
+}
+#modal > form {
+	width: 100%;
+	position: relative;
+	margin: 30px 10px;
+}
+#modal > form > input {
+	display: block;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 30px;
+    border-radius: 30px;
+    outline: none;
+    margin-bottom: 30px;
+    border-color: #F0F1FF;
+    color: #9e9eff;
+    -webkit-box-shadow: none;
+    -webkit-appearance: none;
+  	box-shadow: none;
+}
+#modal > form > button {
+	display: block;
+	margin: auto;
+	background-color: #ff5e8d;
+	border-radius: 20px;
+	padding: 10px 40px;
+	color: white;
+	outline: none;
+}
+
+@media screen and (max-width: 600px) {
+	#modal {
+		font-size: 18px;
+		padding: 10px 20px;
+	}
+}
+@media screen and (max-width: 400px) {
+	#modal {
+		font-size: 15px;
+		padding: 5px 0px;
+		text-align: justify;
+	}
+	#modal > form {
+		margin: 10px 5px;
+	}
+	#modal > form > input { 
+		margin-bottom: 15px;
+	}
+}
+

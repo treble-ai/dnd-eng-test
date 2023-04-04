@@ -1,0 +1,141 @@
+.ant-select.treble-searchable-dropdown {
+  @import "styles/rootStyles.scss";
+  width: 100%;
+  border: 1px solid #767676;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #202020;
+  &:hover,
+  &:active {
+    border-color: #6464FF;
+    box-shadow: none;
+  }
+  &:not(.ant-select-customize-input) {
+    height: 48px;
+    .ant-select-selector {
+      height: 100%;
+      background: #202020;
+      border-radius: 8px;
+      border: none;
+      box-shadow: none;
+      .ant-select-selection-placeholder,
+      .ant-select-selection-item {
+        height: 100%;
+        font-family: hk-grotesk-medium;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 21px;
+
+        display: flex;
+        align-items: center;
+        .treble-icon {
+          display: none;
+        }
+      }
+      .ant-select-selection-item {
+        color: #FFFFFF;
+      }
+      .ant-select-selection-placeholder {
+        color: #767676;
+      }
+    }
+    .ant-select-arrow {
+      right: 20px;
+    }
+  }
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input).treble-searchable-dropdown {
+  .ant-select-selector {
+    box-shadow: 0 0 0 2px #6464FF;
+  }
+}
+
+.ant-select-dropdown.treble-searchable-dropdown {
+  padding: 0;
+  background: #000000;
+  border-radius: 2px;
+  .treble-empty {
+    padding: 8px;
+    p {
+      font-family: hk-grotesk;
+      font-size: 14px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+  }
+  .ant-input-affix-wrapper {
+    margin: 16px 16px;
+    width: auto;
+    display: flex;
+    height: 42px;
+    background-color: #202020;
+    border: 1px solid #767676;
+    border-radius: 6px;
+    &:hover,
+    &:active,
+    &-focused {
+      border-color: #6464FF;
+      box-shadow: none;
+    }
+    .ant-input-prefix {
+      margin-right: 10px;
+      span {
+        svg {
+          width: 18px;
+          height: 18px;
+          filter: brightness(0) saturate(100%) invert(50%) sepia(3%)
+            saturate(40%) hue-rotate(24deg) brightness(91%) contrast(91%);
+        }
+      }
+    }
+    .ant-input-suffix {
+      margin-right: 4px;
+      span {
+        visibility: visible;
+        svg {
+          width: 18px;
+          height: 18px;
+          color: #FFFFFF;
+        }
+      }
+    }
+    input {
+      background: transparent;
+
+      color: #FFFFFF;
+    }
+  }
+  .rc-virtual-list {
+    .rc-virtual-list-holder {
+      div {
+        .rc-virtual-list-holder-inner {
+          .ant-select-item {
+            padding: 16px;
+            background-color: transparent;
+            &:hover {
+              background: #393939;
+            }
+            .ant-select-item-option-content {
+              font-family: hk-grotesk;
+              font-size: 14px;
+              line-height: 18px;
+
+              color: #FFFFFF;
+
+              display: flex;
+              .treble-icon {
+                margin-left: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .rc-virtual-list-scrollbar {
+      .rc-virtual-list-scrollbar-thumb {
+        background-color: #E6E6E6 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.multiple-select-dropdown {
+  .dropdown-trigger {
+    button {
+      // background-color: red;
+      height: 33px;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      p {
+        max-width: 160px;
+        overflow: hidden;
+        &.count {
+          margin-right: 8px;
+        }
+      }
+
+      span {
+        margin-left: auto !important;
+      }
+    }
+  }
+
+  .dropdown-menu {
+
+    .select-all {
+      height: 46px;
+      padding: 12px 18px 12px 23px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #E6E6E6;
+      &:hover {
+        color: #16181b;
+        text-decoration: none;
+        background-color: #f8f9fa;
+        cursor: pointer;
+      }
+      p {
+        color: #0F0F0F;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+      }
+      .icon {
+        height: 20px;
+        width: 20px;
+        &--radio-off {
+          background: #767676;
+        }
+        &--radio-on {
+          background: #0F1D2C;
+        }
+      }
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &:active {
+        background-color: unset;
+      }
+      .check-box {
+        width: 20px;
+        height: 20px;
+        border: 1px #000000 solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+          display: none;
+        }
+        &.active {
+          .icon {
+            display: block;
+          }
+        }
+      }
+      .icon--check {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}

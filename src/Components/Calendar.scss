@@ -1,0 +1,80 @@
+$iconsPath: "~assets/icons";
+.tail-datetime-calendar {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid #E6E6E6;
+    border-radius: 2px;
+    .calendar-navi{
+        border-bottom: 1px solid #E6E6E6;
+        border-radius: 2px;
+        display:flex;
+        height: 40px;
+        .button-prev{
+            background: url(#{$iconsPath}/Prev.svg); 
+            height: 10px;
+            width: 10px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            margin-left: 16px;
+            margin-right: auto;
+            margin-top: 16px;
+        }
+        .button-next{
+            background: url(#{$iconsPath}/Next.svg); 
+            height: 10px;
+            width: 10px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            margin-right: 16px;
+            margin-left: auto;
+            margin-top: 16px;
+        }
+        .calendar-label{
+            font-style: normal;
+            font-family: hk-grotesk-medium;
+            font-size: 15px;
+            line-height: 41px;
+        }
+    }
+    .calendar-date{
+        margin-top: 10px;
+        height: 248px;
+    }
+    .calendar-day{
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        &.empty{
+            color: rgba(0, 0, 0, 0.15);
+        }
+        thead{
+            tr{
+                th{
+                    color: rgba(0, 0, 0, 0.45);
+                    font-size: 15px;
+                    line-height: 21px;
+                    text-align: -webkit-center;
+                    font-weight: 1;
+                }
+            }
+        }
+        tbody{
+            tr{
+                .calendar-day{
+                    text-align: -webkit-center;
+                    padding-top: 8px;
+                    font-size: 14px;
+                    line-height: 22px;
+                    span{
+                        padding: 0px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

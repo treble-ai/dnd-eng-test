@@ -1,0 +1,98 @@
+.startOfTable {
+  height: 100%;
+  .almostTable {
+    height: 100%;
+    .table-container {
+      overflow: auto;
+      overflow-y: auto;
+      height: 100%;
+      .table {
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 0px;
+        thead {
+          tr {
+            background: #fafafa;
+            th {
+              color: #767676;
+              font-family: 'hk-grotesk';
+              font-style: normal;
+              font-size: 15px;
+              line-height: 18px;
+            }
+            .header {
+              padding-left: 24px;
+              &-Cellphone {
+                padding-left: 24px;
+              }
+              &-Celular {
+                padding-left: 24px;
+              }
+              &-Móvel {
+                padding-left: 24px;
+              }
+            }
+          }
+        }
+        tbody {
+          height: 520px;
+          tr {
+            font-family: 'hk-grotesk';
+            font-style: normal;
+            font-size: 15px;
+            line-height: 21px;
+            color: rgba(0, 0, 0, 0.85);
+
+            .attribute {
+              padding-top: 15px;
+              max-width: 130px;
+              &p.r {
+                color: #ffffff;
+                height: 100px;
+              }
+              &-index {
+                padding-top: 15px;
+                padding-left: 24px;
+                width: 50px;
+              }
+              &-edit-btn-cell {
+                text-align: end;
+                padding-right: 15px;
+                padding-left: 0px;
+                padding-top: 0px;
+
+                .edit-btn {
+                  border: none;
+                  width: 15px;
+                  padding: 0px;
+                  background-color: transparent;
+                }
+                .dropdown-menu {
+                  right: 8%;
+                  left: auto;
+                }
+              }
+              &-simple_cellphone {
+                padding-top: 15px;
+                width: 170px;
+                font-family: 'hk-grotesk';
+                font-style: normal;
+                font-size: 15px;
+                line-height: 21px;
+                .cellphone-and-icon {
+                  display: flex;
+                  padding-left: 17px;
+                  .table-content {
+                    padding-left: 12px;
+                  }
+                }
+              }
+              td {
+                padding-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

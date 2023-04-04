@@ -1,0 +1,416 @@
+html,body {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none!important; 
+}
+
+h2 {
+	text-align: left;
+	color: #3d486a;
+	font-size: 36px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+}
+
+h3 {
+	text-align: left;
+	color: #3d486a;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+}
+
+p.main-text {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 2;
+	color: #6f7c8a;
+	text-align: center;
+
+}
+p.secondary-text {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 2;
+	color: #6f7c8a;
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+.header {
+  /*background-image: url("../images/Layer 6.png");*/
+  width: 100%;
+  padding: 0 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  color: #3D486A;
+}
+
+
+#main-nav {  
+	display: flex;
+	flex-direction: row;
+	font-family: 'Poppins', sans-serif;
+}
+
+#main-nav a {
+	margin-top: 34px;
+	padding: 8px 0;
+	color: #3D486A;
+	text-decoration: none;
+	flex-grow: 1;
+
+	text-align: center;
+}
+
+#main-nav a.highlight {
+	background-color: #5657A6;
+	color: white;
+}
+
+#main-nav a.highlight:hover {
+	opacity: 0.7;
+}
+
+#main-nav a:last-child{
+	border: 1px solid white;
+	border-radius: 20px;
+}
+
+.header h1 {
+	padding-top: 40px;
+	position: relative;
+	margin: auto;
+
+	font-size: 40px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+
+	text-align: left;
+}
+
+.header h5 {
+	padding-top: 55px;
+	position: relative;
+	margin: auto;
+
+	font-size: 22px;
+	font-family: 'Lato', sans-serif;
+	font-weight: lighter;
+	line-height: 2;
+
+	text-align: left;
+}
+
+
+.btn-red-float {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(255, 94, 141);
+  box-shadow: 0px 15px 40px 0px rgba(255, 21, 89, 0.4);
+  width: 178px;
+  padding: 15px 0;
+  margin: 33px auto 65px auto;
+  text-align: center;
+
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn-red-float:hover{
+	opacity: 0.7;
+}
+
+.btn-green-float {
+	font-size: 18px;
+	font-family: "Poppins";
+	color: rgb(255, 255, 255);
+
+	background-color: #72F4AF;
+	box-shadow: 0px 15px 40px 0px rgb(114,244,175,0.5);
+	width: 178px;
+	padding: 15px 0;
+	margin: 33px auto 65px auto;
+	text-align: center;
+	border-radius: 25px;
+}
+
+.logo-treble{
+	width: 80px;
+	height: 80px;
+	background-image: url("../images/treble-purple.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 34px;
+}
+
+.special{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#header-img {
+	display: block;
+	width: 60%;
+	margin: auto;
+}
+
+.wistia_responsive_padding {
+	position: relative;
+	margin-top: 50px;
+}
+#pulsing-circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: green;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /*transform: translate(-50%,-50%);*/
+  opacity: 0.2;
+  z-index: 2;
+  animation: scaleIn 4s infinite linear;
+}
+
+
+.wistia_responsive_wrapper > span > div > div > div:first-child {
+	animation: scaleIn 1.5s infinite ease-in;
+}
+#wistia_90\.big_play_button_background {
+	animation: scaleIn 1.5s infinite ease-in;
+}
+#wistia_98\.big_play_button_background {
+	animation: scaleIn 1.5s infinite ease-in;
+}
+
+/* whatsapp demo */
+#ws-box-container {
+	padding: 0px 20px 25px 0px;
+}
+#ws-box-cellphone-container {
+	width: 500px;
+}
+
+#ws-container { 
+	font-size: 15px;
+	color: #4b4b4b;
+	height: 62px;
+}
+
+#ws-container > #email-wrapper {
+	width: 100%;
+}
+
+#ws-code {
+	width: 50px;
+	margin-right: 10px;
+	text-align: center;
+
+}
+#ws-number {
+	max-width: 240px;
+}
+#ws-container label {
+	font-family: 'Poppins';
+	font-size: 13px;
+	font-weight: 400;
+	color: #3D486A;
+}
+
+#ws-container input {
+	color: #4b4b4b;
+	outline: none;
+	height: 42px;
+	width: 100%;
+	border: 0px;
+	border-bottom: 1px solid #4b4b4b4b;
+	background-color: transparent;
+}
+
+#btn-begin {
+	padding: 5px 12px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	background-color: #ff6bc1;
+	font-weight: 400;
+	font-size: 20px;
+	cursor: pointer;
+	width: 100%;
+	max-width: 300px;
+	box-shadow: none;
+	top: 10px;
+	outline: none;
+}
+#btn-begin:hover {
+	background-color: #c4458f;
+	cursor: pointer;
+}
+
+#ws-container button::placeholder {
+	color: #4b4b4b;
+}
+
+#ws-box-container-modal {
+	width: 300px;
+	margin: auto;
+
+}
+
+#ws-box-container-modal .btn-demo {
+
+	width: 200px;
+    margin: 30px auto;
+}
+
+@keyframes scaleIn {
+  0% {
+  	transform: scale(0.7, 0.7);
+    opacity: 0.1;
+  }
+  25% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2) ;
+
+    opacity: 0.1;
+  }
+}
+
+#block-why {
+	margin-top: 160px;
+}
+
+#block-why h2{
+	color: #3d486a;
+}
+
+#block-features {
+	width: 100%;
+	min-height: 350px;
+	margin: auto;
+	margin-top: 125px;
+	/*display: flex;*/
+	justify-content: center;
+}
+
+@media (max-width: 1200px){
+	.header{
+		background-size: cover;	
+	}
+}
+
+@media (max-width: 652px){
+	.header h1{
+		font-size: 30px;
+		width: 90%;
+	}
+	#ws-number {
+		max-width: 1000px;
+	}
+}
+
+@media (max-width: 1048px){
+	#block-features{
+		flex-wrap: wrap;
+		margin-top: 65px;
+	}
+
+	#block-why{
+		margin-top: 60px;
+	}
+}
+
+#block-features > div {
+	width: 350px;
+	height: 350px;
+	padding: 40px 50px;
+	float: left;
+}
+#block-features > div:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 90px 0px rgba(14, 0, 137, 0.06);
+}
+
+#block-features img {
+	display: block;
+	margin: auto;
+}
+#block-features h3 {
+	margin-top: 37px;
+	margin-bottom: 23px;
+}
+
+#block-stats {
+	margin-top: 160px;
+
+	background-image: url('../images/leftstain.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: left;
+}
+#block-stats img {
+	width: 100%;
+}
+#block-stats h2 {
+	margin-top: 35%;
+}
+
+#block-multipletools {
+	margin-top: 160px;
+}
+
+#block-multipletools img {
+	width: 80%;
+}
+#block-multipletools h2 {
+	margin-top: 35%;
+}
+
+
+#footer {
+	position: relative;
+	background-image: url('../images/bg-bottom.png');
+	background-size: cover;
+
+	padding-top: 120px;
+	margin-top: 60px;
+	font-size: 16px;
+	color: #6f7c8a;
+}
+
+#footer ul {
+	list-style: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 2;
+	margin-bottom: 140px;
+}
+#up-btn {
+	position: absolute;
+	right: 5%;
+	bottom: 50px;
+}
+
+#copyright-text {
+	text-align: center;
+	margin: 0;
+	padding: 30px;
+}

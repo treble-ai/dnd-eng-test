@@ -1,0 +1,42 @@
+$iconsPath: "~assets/icons";
+$imagesPath: "~assets/images";
+
+.change-question-type-container{
+    .goal-selector-block{
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 8px;
+        .goal-icon, .gold-goal-icon{
+            background: no-repeat;
+            background-position-y: center;
+            width: 28px;
+            height: 28px;
+            background-size: 28px;
+        }
+        .goal-icon{
+            background-image: url(#{$iconsPath}/grey-start-icon.svg);
+        }
+        .gold-goal-icon{
+            background-image: url(#{$iconsPath}/gold-goal-icon.png);
+        }
+        .setting-goal{
+            background: rgba(87, 39, 176, 0.3);
+            height: 28px;
+            border-radius: 5px;
+            display: flex;
+            p{
+                font-family: hk-grotesk-medium;
+                font-size: 16px;
+                color: #FFFFFF;
+                margin: 1px 5px !important;
+                display: inline-block;
+                cursor: pointer;
+
+                &:hover{
+                    color: #FFCD50;
+                }
+            }
+        }
+    }
+}
+

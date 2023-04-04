@@ -1,0 +1,125 @@
+$iconsPath: "~assets/icons";
+.date-selector{
+    width: 176px;
+    height: 32px;
+    border: 1px solid #E6E6E6;
+    border-radius: 2px;
+    display: flex;
+    padding-top: 6px;
+    cursor: pointer;
+    &--init{
+        margin-left: 16px;
+        margin-right: 8px;
+    }
+    &--end{
+        margin-left: 8px;
+        margin-right: 32px;
+    }
+    .icon{
+        background-repeat: no-repeat;
+        &--calendar{
+            background-image: url(#{$iconsPath}/calendar.svg);
+            width: 16px;
+            height: 16px;
+            margin-left: 16px;
+            margin-right: 8px;
+            margin-top: 2px;
+        }
+    }
+    .down-arrow{
+        width: 8px;
+        height: 8px;
+        background-repeat: no-repeat;
+        margin-top: 6px;
+        margin-right: 16px;
+        margin-left: auto;
+        background-image: url(#{$iconsPath}/down-arrow2.svg);
+    }
+    
+}
+
+.datepicker-container{
+    display: flex;
+    .dropdown{
+        display: none;
+        &.is-active{
+            display: block;
+        }
+    }
+}
+
+.dropdown-content-calendar{
+    position:absolute;
+    width: 570px;
+    height:383px;  
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    right: 10px;
+    top: 16px;
+    padding: 24px 24px 24px 24px;
+    z-index: 10;
+    .date-and-calendar{
+        display:flex;
+        .date-opt{
+            border: 1px solid #E6E6E6;
+            border-radius: 2px;
+            border-right: none;
+            p{
+                width: 186px;
+                height: 42.5px;
+                padding-top: 10px;
+                padding-left: 20px;
+                font-family: "hk-grotesk";
+                font-style: normal;
+                font-size: 14px;
+                line-height: 22px;
+                cursor: pointer;
+                color: #1A1A1A;
+                &.is-selected{
+                    background: #F5F5F5;
+                }
+            }
+        }
+        .tail-datetime-calendar{
+            .calendar-day{
+                .day-container{
+                    padding-top: 2px;
+                    margin:0px;
+                    border-radius: 24px;
+                    width: 24px;
+                    height: 24px;
+                    
+                }
+                .today{
+                    .day-container{
+                        background: #6464FF; 
+                        color: #FFFFFF;
+                    }
+                    
+                }
+            }
+        }
+    } 
+    .save-and-cancel{
+        float: right;
+        margin-top: 16px;
+        display: flex;
+        .btn{
+            border-radius: 4px;
+            width: 96px;
+            height: 31px;
+            font-size: 15px;
+            line-height: 21px;
+            font-family: hk-grotesk-medium;
+            &--cancel{
+                border: 1px solid #E6E6E6;
+                margin-right: 16px;
+            }   
+            &--save{
+                background: #6464FF;
+                color: #FFFFFF;
+            }
+        }
+    }  
+}

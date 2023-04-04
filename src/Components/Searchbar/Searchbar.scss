@@ -1,0 +1,32 @@
+.searchbar {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	.icon-search {
+		width: 27px;
+		height: 27px;
+		margin-right: 12px;
+	}
+	input {
+		width: calc(100% - 30px);
+		padding: 0;
+		border: none;
+		background: none;
+    	font-family: "hk-grotesk";
+    	cursor: pointer;
+		&:focus {
+			outline: none;
+		}
+    &::placeholder {
+      font-family: "hk-grotesk"; 
+    }
+	}
+	.clear-button {
+		margin-left: auto;
+		cursor: pointer;
+		&.icon {
+			width: 8px;
+			height: 8px;
+		}
+	}
+}

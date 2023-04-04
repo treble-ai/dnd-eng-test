@@ -1,0 +1,774 @@
+$assetsPath: "~assets/images";
+$iconsPath: "~assets/icons";
+
+.input {
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 32px;
+
+  &::placeholder {
+    color: #b2b2b2;
+    font-size: 15px;
+  }
+}
+
+button.btn,
+.btn {
+  height: 32px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 16px 4px 16px;
+
+  &.sm {
+    padding: 4px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  &--black {
+    background-color: #000000;
+
+    p {
+      color: white;
+    }
+  }
+
+  &--white {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+
+    p {
+      color: black;
+    }
+  }
+
+  &--grey {
+    background: #555555;
+
+    color: $white;
+
+    border: none;
+
+    &-dark {
+      background: $black-bis;
+
+      color: $white;
+
+      border: none;
+    }
+  }
+
+  &--grey-20 {
+    background-color: $grey-20;
+    color: $white-ter;
+  }
+
+  &--has-icon {
+    .icon {
+      margin-right: 8px;
+    }
+  }
+
+  &.m {
+    padding: 9px;
+
+    height: auto;
+
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.profile-image {
+  width: 32px;
+  height: 32px;
+  background-color: #beafff;
+  border: 1px solid #e6e6e6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  border: 1px solid #e6e6e6;
+
+  p {
+    font-family: hk-grotesk-medium;
+    font-size: 13px;
+    color: white;
+    line-height: 22px;
+  }
+}
+.img-no-list {
+  content: url(#{$assetsPath}/noElements.svg);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 56px;
+}
+.img-no-hsms {
+  content: url(#{$assetsPath}/no_hsms.svg);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 56px;
+}
+.img-rocket-stars{
+  content: url(#{$assetsPath}/rocket-stars.png);
+}
+.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 24px;
+  height: 24px;
+
+  &--treble {
+    background-image: url(#{$assetsPath}/logo-treble.svg);
+  }
+
+  &--chevron {
+    background-image: url(#{$assetsPath}/item-chevron-down.svg);
+    width: 12px;
+    height: 6px;
+  }
+
+  &--template-google-map{
+    background-image: url(#{$assetsPath}/templateGoogleMaps.png);
+    height: 100%;
+    background-position: center center !important;
+    background-size: 278px;
+  }
+
+  &--add {
+    -webkit-mask: url(#{$iconsPath}/add.svg) no-repeat center;
+    mask: url(#{$iconsPath}/add.svg) no-repeat center;
+  }
+
+  &--plus {
+    background-image: url(#{$assetsPath}/plus.svg);
+    width: 16px;
+    height: 16px;
+  }
+
+  &--bell {
+    background-image: url(#{$assetsPath}/bell.svg);
+  }
+
+  &--burger {
+    background-image: url(#{$assetsPath}/align-justify.svg);
+  }
+
+  &--message {
+    background-image: url(#{$assetsPath}/message-square.svg);
+
+    &--active {
+      background-image: url(#{$assetsPath}/message-square-active.svg);
+    }
+  }
+  
+  &--arrow-left {
+    background-image: url(#{$iconsPath}/arrow-left.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/arrow-left.svg);
+    }
+  }
+
+  &--help-circle {
+    background-image: url(#{$iconsPath}/help-circle.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/help-circle.svg);
+    }
+  }
+
+  &--download {
+    background-image: url(#{$iconsPath}/download.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/download.svg);
+    }
+  }
+  &--metrics {
+    background-image: url(#{$iconsPath}/Metrcis-Icon.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/Metrcis-Icon.svg);
+    }
+  }
+
+  &--external-link{
+    background-image: url(#{$iconsPath}/external-link.svg);
+  }
+
+  &--edit {
+    background-image: url(#{$iconsPath}/edit.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/edit.svg);
+    }
+  }
+
+  &--edit-2 {
+    background-image: url(#{$iconsPath}/edit-2.svg);
+  }
+
+  &--pan {
+    background-image: url(#{$iconsPath}/pan.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/pan.svg);
+    }
+  }
+
+  &--person-add {
+    background-image: url(#{$iconsPath}/person-add.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/person-add.svg);
+    }
+  }
+
+  &--plus {
+    background-image: url(#{$iconsPath}/plus.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/plus.svg);
+    }
+  }
+
+  &--plus-circle {
+    background-image: url(#{$iconsPath}/plus-circle.svg);
+  }
+
+  &--handle {
+    background-image: url(#{$iconsPath}/handle.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/handle.svg);
+    }
+  }
+
+  &--trash {
+    background-image: url(#{$iconsPath}/trash.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/trash.svg);
+    }
+  }
+
+  &--copy {
+    background-image: url(#{$iconsPath}/copy.svg);
+
+    &--active {
+      background-image: url(#{$iconsPath}/copy.svg);
+    }
+  }
+
+  &--clip {
+    background-image: url(#{$iconsPath}/clip.svg);
+
+    &.size-16{
+      width: 16px;
+      height: 16px;
+      &.clickable{
+        cursor: pointer;
+      }
+    }
+
+    &--active {
+      background-image: url(#{$iconsPath}/clip.svg);
+    }
+  }
+  &--folder {
+    background-image: url(#{$assetsPath}/folder.svg);
+
+    &--active {
+      background-image: url(#{$assetsPath}/folder-active.svg);
+    }
+  }
+
+  &--settings {
+    background-image: url(#{$assetsPath}/settings.svg);
+
+    &--active {
+      background-image: url(#{$assetsPath}/settings-active.svg);
+    }
+    &.size-28 {
+      height: 28px;
+      width: 28px;
+    }
+  }
+
+  &--settings-mask {
+    -webkit-mask: url(#{$iconsPath}/settings-mask.svg) no-repeat center;
+    mask: url(#{$iconsPath}/settings-mask.svg) no-repeat center;
+  }
+
+  &--file {
+    background-image: url(#{$assetsPath}/file-text.svg);
+
+    &--active {
+      background-image: url(#{$assetsPath}/file-text-active.svg);
+    }
+  }
+
+  &--help {
+    background-image: url(#{$assetsPath}/help.svg);
+
+    &--active {
+      background-image: url(#{$assetsPath}/help-active.svg);
+    }
+  }
+
+  &--language {
+    background-image: url(#{$assetsPath}/globe.svg);
+    margin-right: 8px;
+    padding-left: 16px;
+  }
+
+  &--status {
+    background-image: url(#{$assetsPath}/status.svg);
+    margin-right: 8px;
+    padding-left: 16px;
+  }
+  &--categories {
+    background-image: url(#{$assetsPath}/categories.svg);
+    margin-right: 8px;
+    padding-left: 16px;
+  }
+  &--check {
+    background-image: url(#{$assetsPath}/check.svg);
+    margin-right: 8px;
+    width: 13px;
+  }
+
+  &--APPROVED,
+  &--GREEN {
+    -webkit-mask: url(#{$iconsPath}/Status-dot.svg) no-repeat center;
+    mask: url(#{$iconsPath}/Status-dot.svg) no-repeat center;
+    background: #3FA65F;
+    margin-right: 10px !important;
+    width: 10px;
+    height: 10px;
+  }
+
+  &--IN_APPEAL,
+  &--PROCESSING,
+  &--PENDING_DELETION,
+  &--YELLOW {
+    -webkit-mask: url(#{$iconsPath}/Status-dot.svg) no-repeat center;
+    mask: url(#{$iconsPath}/Status-dot.svg) no-repeat center;
+    background: #FFCD50;
+    margin-right: 10px !important;
+    width: 10px;
+    height: 10px;
+  }
+
+  &--REJECTED,
+  &--PAUSED,
+  &--RED {
+    -webkit-mask: url(#{$iconsPath}/Status-dot.svg) no-repeat center;
+    mask: url(#{$iconsPath}/Status-dot.svg) no-repeat center;
+    background: #EB4128;
+    margin-right: 10px !important;
+    width: 10px;
+    height: 10px;
+  }
+
+  &--DISABLED,
+  &--UNKNOWN {
+    -webkit-mask: url(#{$iconsPath}/Status-dot.svg) no-repeat center;
+    mask: url(#{$iconsPath}/Status-dot.svg) no-repeat center;
+    background: #8D9BA6;
+    margin-right: 10px !important;
+    width: 10px;
+    height: 10px;
+  }
+
+  &--emoji {
+    background-image: url(#{$assetsPath}/emoji.svg);
+  }
+  &--bold {
+    background-image: url(#{$assetsPath}/bold.svg);
+  }
+  &--italic {
+    background-image: url(#{$assetsPath}/italic.svg);
+  }
+  &--strikethrough {
+    background-image: url(#{$assetsPath}/strikethrough.svg);
+  }
+  &--variable-bracket {
+    background-image: url(#{$assetsPath}/variable-bracket.svg);
+    &.white {
+      filter: brightness(0) saturate(100%) invert(99%) sepia(99%) saturate(0%) hue-rotate(341deg) brightness(107%) contrast(100%);
+    }
+    &.size-16{
+      width: 16px;
+      height: 16px;
+      &.clickable{
+        cursor: pointer;
+      }
+    }
+  }
+  &--templates {
+    background-image: url(#{$iconsPath}/book-open.svg);
+  }
+  &--dark-emoji {
+    background-image: url(#{$assetsPath}/dark_emoji.svg);
+  }
+  &--ear {
+    background-image: url(#{$assetsPath}/ear.svg);
+  }
+  &--news {
+    background-image: url(#{$assetsPath}/news.svg);
+  }
+  &--clipboard {
+    background-image: url(#{$assetsPath}/clipboard.svg);
+  }
+  &--right-arrow {
+    background-image: url(#{$assetsPath}/right_arrow.svg);
+  }
+  &--left-arrow {
+    background-image: url(#{$assetsPath}/left_arrow.svg);
+  }
+  &--tool {
+    background-image: url(#{$iconsPath}/tool.svg);
+  }
+  &--left-arrow-full {
+    background-image: url(#{$assetsPath}/left_arrow_full.svg);
+  }
+  &--arrow-left-black{
+    background-image: url(#{$iconsPath}/west.svg);
+    width: 22px;
+    height: 22px;
+  }
+  &--lock {
+    background-image: url(#{$iconsPath}/lock.svg);
+  }
+  &--extension {
+    background-image: url(#{$iconsPath}/extension.svg);
+  }
+  &--pdf {
+    background-image: url(#{$iconsPath}/pdf.svg);
+  }
+  &--csv {
+    background-image: url(#{$iconsPath}/csv.svg);
+  }
+  &--xlsx {
+    background-image: url(#{$iconsPath}/xlsx.svg);
+  }
+  &--docx {
+    background-image: url(#{$iconsPath}/docx.svg);
+  }
+
+  &--cursor {
+    background-image: url(#{$iconsPath}/cursor.svg);
+  }
+
+  &--finder {
+    background-image: url(#{$iconsPath}/finder.svg);
+  }
+
+  &--arrow-forward {
+    background-image: url(#{$iconsPath}/arrow-forward.svg);
+  }
+
+  &--arrow-backward {
+    background-image: url(#{$iconsPath}/arrow-backward.svg);
+  }
+
+  &--other-extension {
+    background-image: url(#{$iconsPath}/other_extension.svg);
+    &.size-16{
+      width: 16px;
+      height: 16px;
+      &.clickable{
+        cursor: pointer;
+      }
+    }
+  }
+  &--image {
+    background-image: url(#{$iconsPath}/image.svg);
+    &.size-16{
+      width: 16px;
+      height: 16px;
+      &.clickable{
+        cursor: pointer;
+      }
+    }
+  }
+  &--map-pin {
+    background-image: url(#{$iconsPath}/map-pin.svg);
+    &.size-16{
+      width: 16px;
+      height: 16px;
+      &.clickable{
+        cursor: pointer;
+      }
+    }
+  }
+  &--map-pin-lavander{
+    background-image: url(#{$iconsPath}/map-pin_lavander.svg);
+  }
+  &--unsupported-extension{
+    background-image: url(#{$iconsPath}/unsupported_extension.svg);
+    width: 44px;
+    height: 44px;
+  }
+  &--close {
+    background-image: url(#{$iconsPath}/close.svg);
+    &.size-16 {
+      width: 16px;
+      height: 16px;
+    }
+    &.clickable{
+      cursor: pointer;
+    }
+  }
+  &--close-mask {
+    -webkit-mask: url(#{$iconsPath}/close.svg) no-repeat center;
+    mask: url(#{$iconsPath}/close.svg) no-repeat center;
+  }
+  &--x-icon {
+    background-image: url(#{$iconsPath}/x-icon.svg);
+  }
+  &--info {
+    background-image: url(#{$iconsPath}/info.svg);
+    &.size-16 {
+      width: 16px;
+      height: 16px;
+    }
+    &.clickable{
+      cursor: pointer;
+    }
+  }
+  &--search {
+    background-image: url(#{$iconsPath}/search.svg);
+    &.size-16 {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &--download-reports {
+    background-image: url(#{$iconsPath}/download-reports.svg);
+  }
+  &--download-mask {
+    -webkit-mask: url(#{$iconsPath}/download-reports.svg) no-repeat center;
+    mask: url(#{$iconsPath}/download-reports.svg) no-repeat center;
+  }
+  &--download-center {
+    width: 46px;
+    height: 43px;
+    background-image: url(#{$iconsPath}/download-center.svg);
+    &:hover {
+      background-image: url(#{$iconsPath}/download-center-hover.svg);
+    }
+  }
+  &--download-center-hover {
+    width: 46px;
+    height: 43px;
+    background-image: url(#{$iconsPath}/download-center-hover.svg);    
+  }
+  &--search-dark-grey {
+    background-image: url(#{$iconsPath}/search-dark-grey.svg);   
+  }
+  &--search-mask {
+    width: 17px;
+    height: 17px;
+    -webkit-mask-size: contain;
+    -webkit-mask: url(#{$iconsPath}/search-dark-grey.svg) no-repeat center;
+    mask: url(#{$iconsPath}/search-dark-grey.svg) no-repeat center;
+  }
+  &--report-success {
+    background-image: url(#{$iconsPath}/report-success.svg);
+  }
+  &--report-success-mask {
+    -webkit-mask: url(#{$iconsPath}/report-success.svg) no-repeat center;
+    mask: url(#{$iconsPath}/report-success.svg) no-repeat center;
+  }
+  &--report-processing-mask {
+    -webkit-mask: url(#{$iconsPath}/report-processing.svg) no-repeat center;
+    mask: url(#{$iconsPath}/report-processing.svg) no-repeat center;
+  }
+  &--report-error-mask {
+    -webkit-mask: url(#{$iconsPath}/report-error.svg) no-repeat center;
+    mask: url(#{$iconsPath}/report-error.svg) no-repeat center;
+  }
+  &--retry-mask {
+    width: 15px;
+    height: 19px;
+    -webkit-mask-size: contain;
+    -webkit-mask: url(#{$iconsPath}/retry-reports.svg) no-repeat center;
+    mask: url(#{$iconsPath}/retry-reports.svg) no-repeat center;
+  }
+  &--trash-mask {
+    width: 13px;
+    height: 17px;
+    -webkit-mask-size: contain;
+    -webkit-mask: url(#{$iconsPath}/trash-reports.svg) no-repeat center;
+    mask: url(#{$iconsPath}/trash-reports.svg) no-repeat center;
+  }
+  &--doc {
+    width: 17px;
+    height: 22px;
+    background-image: url(#{$iconsPath}/doc.svg);
+  }
+  &--calendar {
+    width: 18px;
+    height: 19px;
+    background-image: url(#{$iconsPath}/calendar.svg);
+  }
+  &--thunder {
+    width: 18px;
+    height: 18px;
+    background-image: url(#{$iconsPath}/thunder.svg);    
+  }
+  &--dropdown-arrow-2 {
+    width: 14px;
+    height: 8px;
+    background-image: url(#{$iconsPath}/dropdown-arrow-2.svg);
+  }
+  &--dropdown-arrow-mask {
+    -webkit-mask: url(#{$iconsPath}/dropdown-arrow-2.svg) no-repeat center;
+    mask: url(#{$iconsPath}/dropdown-arrow-2.svg) no-repeat center;
+  }
+  &--caret-down-mask {
+    -webkit-mask: url(#{$iconsPath}/dropdown-arrow.svg) no-repeat center;
+    mask: url(#{$iconsPath}/dropdown-arrow.svg) no-repeat center;
+  }
+  &--check-white {
+    width: 13px;
+    height: 9px;
+    background-image: url(#{$iconsPath}/check-white.svg);
+  }
+  &--check-mask {
+    width: 13px;
+    height: 9px;
+    -webkit-mask-size: contain;
+    -webkit-mask: url(#{$iconsPath}/check-white.svg) no-repeat center;
+    mask: url(#{$iconsPath}/check-white.svg) no-repeat center;
+  }
+  &--question {
+    width: 12px;
+    height: 12px;
+    background-image: url(#{$iconsPath}/question.svg);
+  }
+  &--whatsapp-mask {
+    -webkit-mask: url(#{$iconsPath}/whatsapp-white.svg) no-repeat center;
+    mask: url(#{$iconsPath}/whatsapp-white.svg) no-repeat center;
+  }
+  &--multiple-stop-mask {
+    -webkit-mask: url(#{$iconsPath}/multiple-stop.svg) no-repeat center;
+    mask: url(#{$iconsPath}/multiple-stop.svg) no-repeat center;
+  }
+  &--controll-mask {
+    -webkit-mask: url(#{$iconsPath}/controll.svg) no-repeat center;
+    mask: url(#{$iconsPath}/controll.svg) no-repeat center; 
+  }
+  &--link {
+    -webkit-mask: url(#{$iconsPath}/link.svg) no-repeat center;
+    mask: url(#{$iconsPath}/link.svg) no-repeat center; 
+  }
+  &--video {
+    -webkit-mask: url(#{$iconsPath}/video.svg) no-repeat center;
+    mask: url(#{$iconsPath}/video.svg) no-repeat center; 
+  }
+  &--audio {
+    -webkit-mask: url(#{$iconsPath}/audio.svg) no-repeat center;
+    mask: url(#{$iconsPath}/audio.svg) no-repeat center; 
+  }
+  &--document {
+    -webkit-mask: url(#{$iconsPath}/document.svg) no-repeat center;
+    mask: url(#{$iconsPath}/document.svg) no-repeat center; 
+  }
+  &--location {
+    -webkit-mask: url(#{$iconsPath}/location.svg) no-repeat center;
+    mask: url(#{$iconsPath}/location.svg) no-repeat center; 
+  }
+  &--image-2 {
+    -webkit-mask: url(#{$iconsPath}/image-2.svg) no-repeat center;
+    mask: url(#{$iconsPath}/image-2.svg) no-repeat center; 
+  }
+  &--headset_mic {
+    -webkit-mask: url(#{$iconsPath}/headset_mic.svg) no-repeat center;
+    mask: url(#{$iconsPath}/headset_mic.svg) no-repeat center; 
+  }
+  &--table {
+    -webkit-mask: url(#{$iconsPath}/table.svg) no-repeat center;
+    mask: url(#{$iconsPath}/table.svg) no-repeat center; 
+  }
+  &--block {
+    -webkit-mask: url(#{$iconsPath}/block.svg) no-repeat center;
+    mask: url(#{$iconsPath}/block.svg) no-repeat center; 
+  }
+  &--important-information {
+    -webkit-mask: url(#{$iconsPath}/important-information.svg) no-repeat center;
+    mask: url(#{$iconsPath}/important-information.svg) no-repeat center; 
+  }
+  &--caution {
+    width: 18px;
+    height: 18px;
+    background-image: url(#{$iconsPath}/caution.svg);
+  }
+  &--radio-on {
+    -webkit-mask: url(#{$iconsPath}/radio-on.svg) no-repeat center;
+    mask: url(#{$iconsPath}/radio-on.svg) no-repeat center; 
+  }
+  &--radio-off {
+    -webkit-mask: url(#{$iconsPath}/radio-off.svg) no-repeat center;
+    mask: url(#{$iconsPath}/radio-off.svg) no-repeat center; 
+  }
+  &--rocket {
+    background-image: url(#{$iconsPath}/rocket.svg);
+  }
+  &--logout {
+    background-image: url(#{$iconsPath}/logout.svg);
+  }
+  &--save {
+    width: 18px;
+    height: 18px;
+    background-image: url(#{$iconsPath}/save.svg);   
+  }
+  &--undo {
+    -webkit-mask: url(#{$iconsPath}/undo.svg) no-repeat center;
+    mask: url(#{$iconsPath}/undo.svg) no-repeat center; 
+  }
+  &--redo {
+    -webkit-mask: url(#{$iconsPath}/redo.svg) no-repeat center;
+    mask: url(#{$iconsPath}/redo.svg) no-repeat center; 
+  }
+  &--sync {
+    -webkit-mask: url(#{$iconsPath}/Saved-Icon.svg) no-repeat center;
+    mask: url(#{$iconsPath}/Saved-Icon.svg) no-repeat center; 
+  }
+  &--noDraft {
+    -webkit-mask: url(#{$iconsPath}/Saved-Icon.svg) no-repeat center;
+    mask: url(#{$iconsPath}/Saved-Icon.svg) no-repeat center; 
+  }
+  &--notSync {
+    -webkit-mask: url(#{$iconsPath}/Saved-Icon.svg) no-repeat center;
+    mask: url(#{$iconsPath}/Saved-Icon.svg) no-repeat center; 
+  }
+  &--syncError {
+    -webkit-mask: url(#{$iconsPath}/Sync-error.svg) no-repeat center;
+    mask: url(#{$iconsPath}/Sync-error.svg) no-repeat center; 
+  }
+  &--go-icon {
+    -webkit-mask: url(#{$iconsPath}/Go-Icon.svg) no-repeat center;
+    mask: url(#{$iconsPath}/Go-Icon.svg) no-repeat center; 
+  }
+}

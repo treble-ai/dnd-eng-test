@@ -1,0 +1,17 @@
+.graph{
+    padding-top:8px;
+    margin-left: 24px;
+    margin-right: 24px;
+    .grey-background{
+        height: 4px;
+        position: absolute;
+        background: #FAFAFA;
+        border-radius: 30px;
+    }
+    .color-bar{
+        height: 4px;
+        position: absolute;
+        background: #3C8C55;
+        border-radius: 30px;
+    }
+}

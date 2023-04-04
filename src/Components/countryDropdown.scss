@@ -1,0 +1,44 @@
+.country-selector-v2 {
+  color: rgba(0, 0, 0, 0.85);
+  flex-grow: 0;
+  .m-dropdown__inner{
+    height: 207px;
+    overflow:scroll;
+    .m-dropdown__body{
+      padding:0px;
+      .dropdown-item{
+          a{
+            color: rgba(0, 0, 0, 0.85);
+          }
+          height:32px;
+          width:280px;
+          font-family: 'hk-grotesk';
+          font-style: normal;
+          font-size: 15px;
+          line-height: 21px;
+          padding-top: 8px;
+          padding-left: 12px;
+          img{
+            height: 20px;
+            width: 20px;
+          }
+          .country-item-name{
+            padding-left: 8px;
+          }
+          .country-item-phone {
+            right: 10px;
+            position: absolute;
+          }
+        }
+      }
+    }
+  .input-group{
+    .input-group-prepend{
+      display: flex;
+      width: 100px;
+      height: 40px;
+      background: #f5f5f5;
+      border-radius: 2px 0px 0px 2px;
+    }
+  }
+}

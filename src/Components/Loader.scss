@@ -1,0 +1,30 @@
+$loader-width: 80px;
+
+.treble-loader{
+	position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1001;
+    transform: translate(-50%,-50%);
+
+    .m-loader{
+    	width: $loader-width;
+    	height: $loader-width;
+    }
+
+    ::before{
+    	width: $loader-width;
+    	height: $loader-width;
+    	top: 0px;
+    	left: 0px;
+    }
+
+    .treble-logo {
+        height: $loader-width;
+        width: $loader-width;
+        z-index: 1001;
+        background-image: url('../assets/images/treble-purple.gif');
+        background-size: cover;
+    }
+}
+

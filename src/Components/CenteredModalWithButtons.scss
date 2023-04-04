@@ -1,0 +1,27 @@
+.modal-centered {
+  @import "styles/rootStyles.scss";
+  width: 376px;
+  height: 176px;
+  p {
+    text-align: center;
+  }
+
+  #close-x {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .button-row {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .btn {
+      margin: 0 16px;
+    }
+    .btn--black {
+      color: #ffffff;
+    }
+  }
+}

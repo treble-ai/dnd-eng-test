@@ -1,0 +1,75 @@
+.treble-component {
+
+	@import '../assets/styles/rootStyles.scss';
+	@import "../assets/styles/textStyles.scss";
+	@import "../assets/styles/elements.scss";
+	@import "../assets/styles/classes.scss";
+
+	&.dropdown {
+
+		&.is-center {
+
+			.dropdown-menu {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			
+		}
+
+		.dropdown-trigger {
+
+			font-family: hk-grotesk;
+
+			font-style: normal;
+			font-size: 15px;
+			line-height: 21px;
+
+			outline: none;
+
+			.button {
+				padding: 9px 17px;
+				height: auto;
+
+				border-radius: 2px;
+
+				border: 1px solid #E6E6E6;
+
+				&:focus {
+					outline: none;
+					border: 1px solid #E6E6E6;
+					box-shadow: none;
+				}
+
+				.icon {
+					margin-left: 6px;
+					margin-right: 0;
+
+					width: auto;
+				}
+			}
+		}
+
+
+		.dropdown-menu {
+			margin: 0;
+			padding-top: 9px;
+
+			border: none;
+			box-shadow: none;
+
+
+			.dropdown-content {
+
+				padding: 9px 9px;
+				box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+
+				font-family: hk-grotesk;
+				font-style: normal;
+				font-size: 15px;
+				line-height: 22px;
+			}
+		}
+
+	}
+}
+

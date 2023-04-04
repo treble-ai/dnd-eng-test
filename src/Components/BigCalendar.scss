@@ -1,0 +1,143 @@
+$iconsPath: "~assets/icons";
+.datetime-big-calendar{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    .calendar-date-container{
+        display: flex;
+        h5{
+            font-family: 'hk-grotesk';
+            color: #000000;
+        }
+        .flush-right-container{
+            display:flex;
+            margin-left: auto;
+            .react-skeleton-load {
+                width: 465px !important;
+            }
+            .button-prev{
+                background: url(#{$iconsPath}/prevBold.svg); 
+                height: 24px;
+                width: 24px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                margin-right: 4px;
+            }
+            .button-next{
+                background: url(#{$iconsPath}/nextBold.svg); 
+                height: 24px;
+                width: 24px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+        }
+    }
+    .calendar-date{
+        margin-top: 16px;
+        .calendar-day{
+            margin:0;
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            thead{
+                background: #FAFAFA;
+                border: 1px solid #E6E6E6;
+                box-sizing: border-box;
+                border-bottom: none;
+                tr{
+                    height: 43px;
+                    text-transform: uppercase;
+                    font-family: 'hk-grotesk';
+                    font-size: 13px;
+                    line-height: 18px;
+                    th{
+                        color: #767676;
+                        padding-top: 16px;
+                        padding-left: 40px;
+                        @media (max-width: 1300px){
+                            padding-left: 3%;
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    height: 160px;
+                    .calendar-day{
+                        width: 160px;
+                        height: 160px;
+                        position: relative;
+                        .polls-container{
+                            position: absolute;
+                            bottom: 10px;
+                            p.more{
+                                color: #000000;
+                                font-family: hk-grotesk-medium;
+                                margin-left: 8px;
+                            }
+                            .conversation{
+                                width: 145px;
+                                height: 32px;
+                                margin-left: 8px;
+                                margin-right: 8px;
+                                padding-left: 8px;
+                                padding-top:10px;
+                                border-radius: 2px;
+                                margin-bottom:8px;
+                                overflow: hidden;
+                                &--sent{
+                                    background: #EBEBFF;
+                                }
+                                &--programmed{
+                                    background: #FFEBE6;
+                                }
+                                p{
+                                    max-height: 32px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                        }
+                    }
+                    .calendar-day.empty{
+                        background: #FAFAFA;
+                    }
+                    .calendar-day.today{
+                        .day{
+                            background: #F06450;
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 19px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    td{
+                        border: 1px solid #E6E6E6;
+                        box-sizing: border-box;
+                        
+                        .day-container{
+                            float: right;
+                            margin-top: 16px;
+                            margin-right: 16px;
+                            color: #000000;
+                            font-family: 'hk-grotesk';
+                            font-size: 15px;
+                            line-height: 24px;
+                            .day{
+                                padding-top: 3px;
+                                padding-left: 10px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+}

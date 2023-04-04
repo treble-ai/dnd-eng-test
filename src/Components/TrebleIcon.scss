@@ -1,0 +1,24 @@
+img.treble-icon {
+  padding: 0 !important;
+  &.size {
+    
+    &-28 {
+      height: 28px !important;
+      width: 28px !important;
+    }
+
+    &-24 {
+      height: 24px !important;
+      width: 24px !important;
+    }
+    &-18 {
+      height: 18px !important;
+      width: 18px !important;
+    }
+  }
+  &.cursor {
+    &-pointer {
+      cursor: pointer;
+    }
+  }
+}
