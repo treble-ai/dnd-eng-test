@@ -1,0 +1,186 @@
+$iconsPath: "~assets/icons";
+.new-goal-body{
+  &.hsm{
+    max-height: none !important;
+    overflow: inherit!important;
+  }
+}
+.ant-modal-content {
+    .hsm-modal-description{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 19px;
+        padding: 15px;
+        width: 478px;
+        height: max-content;
+        background: #202020;
+        border: 1px solid #C3C3FF;
+        border-radius: 2px;    
+        margin-bottom: 20px;
+        p{
+          font-family: inherit !important;
+          text-align: justify;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 30px;
+        }
+    }
+    div.hsm-template-dropdown{
+      position: relative;
+      width: 200px;
+      height: 100px;
+      border: 1px solid;
+      box-sizing: border-box;
+      width: 478px;
+      height: 95px;
+      background: #202020;
+      border: 1px solid #767676;
+      border-radius: 8px;
+      padding: 10px 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 10px;
+      margin-bottom: -1rem;
+      p{
+        font-family: inherit!important;
+      }
+    }
+    .interval-input-container{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      p{
+        font-family: inherit!important;
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 16px;
+        line-height: 22px !important;
+        color: #B2B2B2 !important;
+        padding-right:5px;
+      }
+      .ant-input-number.treble-input{
+        width: 60px !important;
+        margin-right:10px;
+      }
+     .dropdown.select-dropdown-main{
+      width: 150px !important;
+      margin-top: 2px !important;
+      }
+    }
+    .interval-notice-container{
+      display: flex;
+      flex-direction: row;
+      padding: 12px 17px;
+      width: 177px;
+      height: max-content;
+      left: 492px;
+      top: 486px;
+      background: #5727B0;
+      border-radius: 4px;
+      position: absolute;
+      left: 11px;
+      top: 21rem;
+      z-index: 100;
+    }
+    .hsm-step{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      p{
+        font-family: inherit !important;
+      }
+      div.hsm-one-icon, div.hsm-two-icon,  div.hsm-notice-icon{
+
+        background-position: center;
+        width: 36px;
+        height: 36px;
+        background-size: auto;
+        margin-right: 1rem;
+        background-repeat: no-repeat;
+      }
+      div.hsm-one-icon{
+        background-image: url(#{$iconsPath}/circle-01.svg);
+      }
+
+      div.hsm-two-icon{
+        background-image: url(#{$iconsPath}/circle-02.svg);
+      }
+      div.hsm-notice-icon{
+        background-image: url(#{$iconsPath}/Attention-Icon.svg);
+       
+      }
+    }
+    .hsm-buttons-container {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        button{
+            cursor: pointer;
+        }
+        .create-goal-now {
+            width: 100%;
+            height: 57px;
+            background-color: #d6d6d6;
+            border-radius: 6px;
+            border: none;
+            cursor: not-allowed;
+            p {
+              margin: auto;
+              font-size: 18px;
+              color: #ffffff;
+            }
+            &.is-valid {
+              background-color: #6464ff;
+              cursor: pointer;
+              &:hover {
+                background-color: #8787fd;
+              }
+            }
+          }
+
+        .hsm-cancel{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            width: 65px;
+            height: 28px;
+            background: transparent;
+            border: none;
+            color: #767676;
+
+        }
+    }
+    .hsm-side-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 10px;
+      gap: 20px;
+  
+      position: absolute;
+      width: 268px;
+      height: max-content;
+      right: -210px;
+      top: 26rem;
+  
+      background: #202020;
+      /* Grey/Grey 08 */
+  
+      border: 1px solid #383838;
+      border-radius: 2px;
+      &>p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+      }
+     
+  }
+
+}

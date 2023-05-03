@@ -70,6 +70,18 @@ const languages = {
     clickOnStarIcon: "Haz clic sobre el ícono con forma de estrella.",
     selectAndStartToMeasure:
       "Selecciona la meta de tu campaña y ¡Comienza a medir!",
+    hsmBlock:"HSM x2",
+    hsmIntructions:"Envía un segundo HSM dentro del periodo de las 24 horas <0>sin costo adicional</0> a todos aquellos números contactados que no respondan al primer HSM enviado",
+    hsmSelectTemplate : "Selecciona una plantilla HSM",
+    hsmInterval : "Define el intervalo de tiempo",
+    hsmIntervalDescription: "La segunda plantilla HSM se enviará después de:",
+    hsmCreate:"Crear HSM x2",
+    hsmNotice:"Recuerda que es importante definir un intervalo de tiempo que no sea tan corto entre el primer HSM y el segundo, de lo contrario tus contactos podrían tomarlo como spam.",
+    cancel:"Cancel",
+    hsmMinute:"Minutos",
+    hsmHour:"Horas",
+    intervalPeriod:"Define un tiempo dentro del periodo de las 24 horas",
+
   },
   en: {
     step0: "You have currently completed step 0 of 2",
@@ -141,6 +153,19 @@ const languages = {
     placeLink: "Places a link within the message of a basic block.",
     clickOnStarIcon: "Click on the star icon.",
     selectAndStartToMeasure: "Select your campaign goal and start measuring!",
+    hsmBlock:"HSM x2",
+    hsmIntructions : "Send a second HSM within the 24-hour period at <0> no additional cost </0> to all contacted numbers that do not respond to the first HSM sent.",
+    hsmSelectTemplate : "Select an HSM Template",
+    hsmInterval : "Define Interval",
+    hsmIntervalDescription: "The second template will be sent after:",
+    hsmNotice:"Recuerda que es importante definir un intervalo de tiempo que no sea tan corto entre el primer HSM y el segundo, de lo contrario tus contactos podrían tomarlo como spam.",
+    hsmCreate:"Create HSM x2",
+    cancel:"Cancel",
+    hsmMinute:"Minutes",
+    hsmHour:"Hours",
+    intervalPeriod:"Define a time within a 24 hour period."
+
+
   },
   pr: {
     step0: "Você concluiu atualmente a etapa 0 de 2",
