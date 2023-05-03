@@ -14,6 +14,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   const selectNode = (node) => {
+    console.log("node", node)
     dispatch(operations.changeNodeSelected(node));
   };
 

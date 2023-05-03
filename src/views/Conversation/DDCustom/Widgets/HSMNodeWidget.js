@@ -13,6 +13,7 @@ import events from "utils/events";
 
 import languages from "./languages.js";
 import getLanguage from "getLanguage.js";
+import SetHsmInNode from "Components/HsmIcon/SetHsmInNode";
 const language = languages[getLanguage()];
 
 export class HSMNodeWidget extends React.Component {
@@ -99,6 +100,7 @@ export class HSMNodeWidget extends React.Component {
 
   renderAnswerOpenPort() {
     const { node } = this.props;
+    console.log("node", node)
     const answerOpenPort = node.getAnswerOpenPort();
 
     if (!answerOpenPort) return null;
@@ -264,11 +266,15 @@ export class HSMNodeWidget extends React.Component {
     }
     const fileInputId =
       "question-node-widget-inpt-file-attach-" + this.props.node.getID();
-
     return (
       <div className="whole-question-container">
         <div className="change-question-type-container">
           <SetGoalInNode
+            node={node}
+            forceUpdate={this.forceUpdate.bind(this)}
+          />
+          <SetHsmInNode
+            diagramEngine={this.props.diagramEngine}
             node={node}
             forceUpdate={this.forceUpdate.bind(this)}
           />

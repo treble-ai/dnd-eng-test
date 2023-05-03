@@ -72,4 +72,9 @@ const TARGET_EVENT_OPTIONS = [
   { label: language.readersNumber, value: constants.TARGET_EVENT_READ },
 ];
 
-export { CAMPAIGN_GOAL_OPTIONS, TARGET_EVENT_OPTIONS };
+const TARGET_HSM_INTERVAL= [
+  { label: language.hsmMinute, value: constants.HSM_MINUTE },
+  { label: language.hsmHour, value: constants.HSM_HOUR },
+];
+
+export { CAMPAIGN_GOAL_OPTIONS, TARGET_EVENT_OPTIONS, TARGET_HSM_INTERVAL };
